@@ -1,0 +1,2278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Prayag - Full Stack Developer and Python Developer Portfolio. Projects built with HTML, CSS, JavaScript, Python, Flask, MySQL and modern web technologies.">
+
+    <meta name="keywords"
+          content="Prayag, Full Stack Developer, Python Developer, Flask Developer, Web Developer, JavaScript Developer, MySQL, React">
+
+    <meta name="author"
+          content="Prayag">
+
+    <meta name="theme-color"
+          content="#080b12">
+
+    <title>
+        Prayag | Full Stack Developer
+    </title>
+
+
+    <!-- =====================================================
+                         BOOTSTRAP
+    ====================================================== -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+                      BOOTSTRAP ICONS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- =====================================================
+                         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <!-- =====================================================
+                         CUSTOM CSS
+    ====================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+                         NAVBAR
+===================================================== -->
+
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            <span>PR</span>
+        </a>
+
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <div
+            class="collapse navbar-collapse"
+            id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home">
+                        Home
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">
+                        About
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">
+                        Skills
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">
+                        Projects
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">
+                        Experience
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">
+                        Education
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#certification">
+                        Certification
+                    </a>
+                </li>
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+                           HERO
+===================================================== -->
+
+<section id="home" class="hero-section">
+
+    <div class="hero-grid"></div>
+
+
+    <div class="container">
+
+        <div class="row align-items-center min-vh-100">
+
+
+            <!-- ================= LEFT ================= -->
+
+            <div class="col-lg-7 hero-content">
+
+                <div class="availability">
+
+                    <span class="status-dot"></span>
+
+                    Open to opportunities
+
+                </div>
+
+
+                <p class="hero-small">
+                    HELLO, I'M
+                </p>
+
+
+                <h1>
+                    Prayag<span class="hero-dot">.</span>
+                </h1>
+
+
+                <h2>
+
+                    Full Stack
+
+                    <span class="gradient-text">
+                        Developer
+                    </span>
+
+                </h2>
+
+
+                <p class="hero-description">
+
+                    BCA graduate and aspiring
+                    <strong>Full Stack Developer</strong>
+                    focused on building modern,
+                    responsive and scalable web
+                    applications using
+                    <strong>
+                        Python, Flask, JavaScript,
+                        HTML, CSS and MySQL.
+                    </strong>
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#projects"
+                        class="btn btn-primary-custom">
+
+                        View Projects
+
+                        <i class="bi bi-arrow-down-right"></i>
+
+                    </a>
+
+
+                    <a
+                        href="{{ url_for('static', filename='resume/Prayag_Rana_Resume.pdf') }}"
+                        class="btn btn-outline-custom"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        <i class="bi bi-download"></i>
+
+                        Download Resume
+
+                    </a>
+
+                </div>
+
+
+                <!-- ================= SOCIAL ================= -->
+
+                <div class="social-links">
+
+                    <a
+                        href="https://github.com/prayagrana450-boop"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub">
+
+                        <i class="bi bi-github"></i>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/prayag-rana-30636b311"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">
+
+                        <i class="bi bi-linkedin"></i>
+
+                    </a>
+
+
+                    <a
+                        href="mailto:prayagrana450@gmail.com"
+                        aria-label="Email">
+
+                        <i class="bi bi-envelope"></i>
+
+                    </a>
+
+
+                    <a
+                        href="tel:+918923718756"
+                        aria-label="Phone">
+
+                        <i class="bi bi-telephone"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RIGHT ================= -->
+
+            <div class="col-lg-5">
+
+                <div class="profile-area">
+
+                    <div class="profile-orbit orbit-one"></div>
+
+                    <div class="profile-orbit orbit-two"></div>
+
+
+                    <div class="profile-card">
+
+                        <div class="profile-image-wrapper">
+
+                            <img
+                                src="{{ url_for('static', filename='images/profile.jpg') }}"
+                                alt="Prayag - Full Stack Developer"
+                                class="profile-image"
+                                onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';">
+
+
+                            <div
+                                id="profileFallback"
+                                class="profile-fallback">
+
+                                PR
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-ai">
+
+                        <i class="bi bi-code-square"></i>
+
+                        <div>
+
+                            <strong>
+                                Full Stack
+                            </strong>
+
+                            <small>
+                                Development
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card card-python">
+
+                        <i class="bi bi-filetype-py"></i>
+
+                        <div>
+
+                            <strong>
+                                Python
+                            </strong>
+
+                            <small>
+                                Flask Backend
+                            </small>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                          ABOUT
+===================================================== -->
+
+<section id="about" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>01</span>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+            <p>
+                Who I am and what I build.
+            </p>
+
+        </div>
+
+
+        <div class="row align-items-center">
+
+
+            <!-- CONTENT -->
+
+            <div class="col-lg-7">
+
+                <div class="about-content">
+
+                    <h3>
+
+                        Building ideas into
+                        <span>
+                            real web applications.
+                        </span>
+
+                    </h3>
+
+
+                    <p>
+
+                        I am a BCA graduate and aspiring
+                        Full Stack Developer with a strong
+                        interest in software and web
+                        application development.
+
+                    </p>
+
+
+                    <p>
+
+                        I work across both frontend and
+                        backend technologies. On the frontend,
+                        I use HTML5, CSS3, JavaScript,
+                        Bootstrap and responsive design.
+
+                    </p>
+
+
+                    <p>
+
+                        On the backend, I use Python,
+                        Flask, REST APIs and MySQL to
+                        build database-driven applications
+                        with authentication, CRUD operations
+                        and business logic.
+
+                    </p>
+
+
+                    <p>
+
+                        My goal is to become a professional
+                        Full Stack Developer and contribute
+                        to scalable and user-focused software
+                        products.
+
+                    </p>
+
+
+                    <div class="about-tags">
+
+                        <span>
+                            Full Stack Development
+                        </span>
+
+                        <span>
+                            Python
+                        </span>
+
+                        <span>
+                            Flask
+                        </span>
+
+                        <span>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            MySQL
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- STATS -->
+
+            <div class="col-lg-5">
+
+                <div class="about-stats">
+
+
+                    <div class="stat-box">
+
+                        <div class="stat-icon">
+                            <i class="bi bi-window"></i>
+                        </div>
+
+                        <h4>
+                            Frontend
+                        </h4>
+
+                        <p>
+                            Web Development
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <div class="stat-icon">
+                            <i class="bi bi-server"></i>
+                        </div>
+
+                        <h4>
+                            Backend
+                        </h4>
+
+                        <p>
+                            Python & Flask
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <div class="stat-icon">
+                            <i class="bi bi-database"></i>
+                        </div>
+
+                        <h4>
+                            MySQL
+                        </h4>
+
+                        <p>
+                            Database
+                        </p>
+
+                    </div>
+
+
+                    <div class="stat-box">
+
+                        <div class="stat-icon">
+                            <i class="bi bi-cloud-arrow-up"></i>
+                        </div>
+
+                        <h4>
+                            Deployment
+                        </h4>
+
+                        <p>
+                            Web Applications
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                         SKILLS
+===================================================== -->
+
+<section id="skills" class="section section-dark">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>02</span>
+
+                <h2>
+                    Technical Skills
+                </h2>
+
+            </div>
+
+            <p>
+                Technologies I work with.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- FRONTEND -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-window"></i>
+                    </div>
+
+                    <h3>
+                        Frontend Development
+                    </h3>
+
+                    <p>
+
+                        Building responsive,
+                        user-friendly and modern
+                        web interfaces.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>React.js</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- BACKEND -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-server"></i>
+                    </div>
+
+                    <h3>
+                        Backend Development
+                    </h3>
+
+                    <p>
+
+                        Developing server-side
+                        applications and REST APIs
+                        using Python.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>REST API</span>
+                        <span>AJAX</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DATABASE -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-database"></i>
+                    </div>
+
+                    <h3>
+                        Database
+                    </h3>
+
+                    <p>
+
+                        Designing and integrating
+                        relational databases with
+                        web applications.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>MySQL</span>
+                        <span>SQL</span>
+                        <span>CRUD</span>
+                        <span>Database Design</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FULL STACK -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-layers"></i>
+                    </div>
+
+                    <h3>
+                        Full Stack
+                    </h3>
+
+                    <p>
+
+                        Connecting frontend,
+                        backend, database and APIs
+                        into complete applications.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>Frontend</span>
+                        <span>Backend</span>
+                        <span>API</span>
+                        <span>Database</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEVELOPMENT -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-terminal"></i>
+                    </div>
+
+                    <h3>
+                        Development
+                    </h3>
+
+                    <p>
+
+                        Application development,
+                        debugging, testing and
+                        version control.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Debugging</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DEPLOYMENT -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="skill-card">
+
+                    <div class="skill-icon">
+                        <i class="bi bi-cloud"></i>
+                    </div>
+
+                    <h3>
+                        Deployment
+                    </h3>
+
+                    <p>
+
+                        Deploying web applications
+                        and managing production
+                        configurations.
+
+                    </p>
+
+                    <div class="skill-tags">
+
+                        <span>Render</span>
+                        <span>Railway</span>
+                        <span>GitHub</span>
+                        <span>Environment Variables</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                         PROJECTS
+===================================================== -->
+
+<section id="projects" class="section">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>03</span>
+
+                <h2>
+                    Featured Projects
+                </h2>
+
+            </div>
+
+            <p>
+                Full Stack applications and projects.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- =================================================
+                         PROJECT 1
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card featured-project">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            01
+                        </span>
+
+                        <span class="project-status live">
+
+                            <span></span>
+
+                            Live
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="bi bi-cart3"></i>
+
+                    </div>
+
+
+                    <h3>
+                        Grocery Delivery
+                        Web Application
+                    </h3>
+
+
+                    <p>
+
+                        A full-stack grocery ordering
+                        application designed to provide
+                        users with a convenient online
+                        shopping experience.
+
+                    </p>
+
+
+                    <div class="project-features">
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            User Authentication
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Product Management
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Shopping Cart
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Order Management
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            CRUD Operations
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Admin Features
+                        </span>
+
+                    </div>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://grocery-app-1oqq.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn primary">
+
+                            <i class="bi bi-box-arrow-up-right"></i>
+
+                            Live Demo
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                         PROJECT 2
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            02
+                        </span>
+
+                        <span class="project-status live">
+
+                            <span></span>
+
+                            Live
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="bi bi-shield-check"></i>
+
+                    </div>
+
+
+                    <h3>
+                        AI Powered Fake News
+                        Detection System
+                    </h3>
+
+
+                    <p>
+
+                        A full-stack machine learning
+                        web application combining
+                        Flask, MySQL and a trained
+                        machine learning model to
+                        classify news as Fake or Real.
+
+                    </p>
+
+
+                    <div class="project-features">
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            User Authentication
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            ML Prediction
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Prediction History
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            MySQL Integration
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Admin Dashboard
+                        </span>
+
+                    </div>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>Scikit-learn</span>
+                        <span>TF-IDF</span>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://fake-news-detection-9e7n.onrender.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn primary">
+
+                            <i class="bi bi-box-arrow-up-right"></i>
+
+                            Live Demo
+
+                        </a>
+
+
+                        <a
+                            href="https://github.com/prayagrana450-boop/Fake_News_"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-btn">
+
+                            <i class="bi bi-github"></i>
+
+                            GitHub
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                         PROJECT 3
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            03
+                        </span>
+
+                        <span class="project-status development">
+
+                            <span></span>
+
+                            In Development
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="bi bi-camera-reels"></i>
+
+                    </div>
+
+
+                    <h3>
+                        AI Video Studio
+                    </h3>
+
+
+                    <p>
+
+                        A full-stack AI video generation
+                        application that explores
+                        text prompts, image input,
+                        AI scene planning and automated
+                        video generation workflows.
+
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>JavaScript</span>
+                        <span>Ollama</span>
+                        <span>Generative AI</span>
+                        <span>AI APIs</span>
+
+                    </div>
+
+
+                    <div class="project-process">
+
+
+                        <div class="process-item">
+
+                            <span>
+                                01
+                            </span>
+
+                            <p>
+                                Image + Prompt
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-arrow">
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </div>
+
+
+                        <div class="process-item">
+
+                            <span>
+                                02
+                            </span>
+
+                            <p>
+                                AI Planning
+                            </p>
+
+                        </div>
+
+
+                        <div class="process-arrow">
+
+                            <i class="bi bi-arrow-right"></i>
+
+                        </div>
+
+
+                        <div class="process-item">
+
+                            <span>
+                                03
+                            </span>
+
+                            <p>
+                                Video
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-links">
+
+                        <a
+                            href="#contact"
+                            class="project-btn">
+
+                            <i class="bi bi-info-circle"></i>
+
+                            Project Details
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                         PROJECT 4
+            ================================================== -->
+
+            <div class="col-lg-6">
+
+                <div class="project-card upcoming-project">
+
+
+                    <div class="project-top">
+
+                        <span class="project-number">
+                            04
+                        </span>
+
+                        <span class="project-status">
+
+                            <span></span>
+
+                            Coming Soon
+
+                        </span>
+
+                    </div>
+
+
+                    <div class="project-icon">
+
+                        <i class="bi bi-code-square"></i>
+
+                    </div>
+
+
+                    <h3>
+                        More Full Stack Projects
+                    </h3>
+
+
+                    <p>
+
+                        Continuously building and experimenting
+                        with modern Full Stack Web Development,
+                        creating responsive web applications,
+                        REST APIs, database-driven systems
+                        and scalable solutions.
+
+                    </p>
+
+
+                    <div class="tech-stack">
+
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>MySQL</span>
+                        <span>REST API</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                       EXPERIENCE
+===================================================== -->
+
+<section id="experience" class="section section-dark">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>04</span>
+
+                <h2>
+                    Experience
+                </h2>
+
+            </div>
+
+
+            <div class="experience-heading-right">
+
+                <p>
+                    Professional learning and development experience.
+                </p>
+
+
+                <!-- TOP CERTIFICATE BUTTON -->
+
+                <a
+                    href="#certification"
+                    class="certificate-view-btn">
+
+                    <i class="bi bi-award"></i>
+
+                    View Certificate
+
+                    <i class="bi bi-arrow-up-right"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= EXPERIENCE TIMELINE ================= -->
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+
+                <div class="timeline-dot"></div>
+
+
+                <div class="timeline-content">
+
+
+                    <div class="timeline-top">
+
+                        <span class="timeline-date">
+                            03 Months
+                        </span>
+
+
+                        <span class="experience-badge">
+                            Internship
+                        </span>
+
+                    </div>
+
+
+                    <h3>
+                        Full Stack Developer Intern
+                    </h3>
+
+
+                    <h4>
+                        CountryEdu Private Limited
+                    </h4>
+
+
+                    <p>
+
+                        Gained practical experience in full-stack
+                        web application development while working
+                        with frontend, backend and database
+                        technologies.
+
+                    </p>
+
+
+                    <!-- EXPERIENCE SKILLS -->
+
+                    <div class="experience-skills">
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            HTML5
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            CSS3
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            JavaScript
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Python
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Flask
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            MySQL
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            REST API
+                        </span>
+
+                        <span>
+                            <i class="bi bi-check2"></i>
+                            Git & GitHub
+                        </span>
+
+                    </div>
+
+
+                    <!-- EXPERIENCE FOOTER -->
+
+                    <div class="experience-footer">
+
+
+                        <span>
+
+                            <i class="bi bi-code-slash"></i>
+
+                            Full Stack Web Development
+
+                        </span>
+
+
+                        <a
+                            href="#certification"
+                            class="experience-certificate-btn">
+
+                            <i class="bi bi-award"></i>
+
+                            View Certificate
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                         EDUCATION
+===================================================== -->
+
+<section id="education" class="section">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>05</span>
+
+                <h2>
+                    Education
+                </h2>
+
+            </div>
+
+            <p>
+                Academic background.
+            </p>
+
+        </div>
+
+
+
+        <!-- BCA -->
+
+        <div class="education-card">
+
+            <div class="education-icon">
+
+                <i class="bi bi-mortarboard"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    2023 — 2026
+                </span>
+
+                <h3>
+                    Bachelor of Computer Applications
+                </h3>
+
+                <p>
+                    Shobhit University, Gangoh
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 12 -->
+
+        <div class="education-card">
+
+            <div class="education-icon">
+
+                <i class="bi bi-book"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Senior Secondary
+                </span>
+
+                <h3>
+                    Class 12th — PCM
+                </h3>
+
+                <p>
+                    MPM Inter College
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- 10 -->
+
+        <div class="education-card">
+
+            <div class="education-icon">
+
+                <i class="bi bi-book"></i>
+
+            </div>
+
+
+            <div>
+
+                <span>
+                    Secondary
+                </span>
+
+                <h3>
+                    Class 10th
+                </h3>
+
+                <p>
+                    MPM Inter College
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                       CERTIFICATION
+===================================================== -->
+
+<section id="certification" class="section section-dark">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>06</span>
+
+                <h2>
+                    Certification
+                </h2>
+
+            </div>
+
+            <p>
+                Professional certification and learning achievement.
+            </p>
+
+        </div>
+
+
+
+        <!-- ================= CERTIFICATE CARD ================= -->
+
+        <div class="certificate-card">
+
+
+            <!-- ICON -->
+
+            <div class="certificate-icon">
+
+                <i class="bi bi-award"></i>
+
+            </div>
+
+
+
+            <!-- CONTENT -->
+
+            <div class="certificate-content">
+
+                <span>
+                    INTERNSHIP CERTIFICATE
+                </span>
+
+
+                <h3>
+                    Full Stack Developer
+                    Internship Certificate
+                </h3>
+
+
+                <p>
+                    CountryEdu Private Limited
+                </p>
+
+
+                <small>
+                    03 Months
+                </small>
+
+
+                <div class="certificate-tags">
+
+                    <span>
+                        Full Stack Development
+                    </span>
+
+                    <span>
+                        Web Development
+                    </span>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- BUTTON -->
+
+            <div class="certificate-action">
+
+                <button
+                    type="button"
+                    class="certificate-open-btn"
+                    data-bs-toggle="modal"
+                    data-bs-target="#certificateModal">
+
+                    <i class="bi bi-eye"></i>
+
+                    View Certificate
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                  CERTIFICATE IMAGE MODAL
+===================================================== -->
+
+<div
+    class="modal fade certificate-modal"
+    id="certificateModal"
+    tabindex="-1"
+    aria-labelledby="certificateModalLabel"
+    aria-hidden="true">
+
+
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+
+
+        <div class="modal-content">
+
+
+            <!-- MODAL HEADER -->
+
+            <div class="modal-header">
+
+                <div>
+
+                    <span class="certificate-modal-label">
+                        CERTIFICATE
+                    </span>
+
+
+                    <h5
+                        class="modal-title"
+                        id="certificateModalLabel">
+
+                        Full Stack Developer
+                        Internship Certificate
+
+                    </h5>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close">
+                </button>
+
+            </div>
+
+
+
+            <!-- CERTIFICATE IMAGE -->
+
+            <div class="modal-body">
+
+                <div class="certificate-image-wrapper">
+
+                    <img
+                        src="{{ url_for('static', filename='certificates/countryedu-certificate.jpg') }}"
+                        alt="CountryEdu Full Stack Developer Internship Certificate"
+                        class="certificate-image">
+
+                </div>
+
+            </div>
+
+
+
+            <!-- MODAL FOOTER -->
+
+            <div class="modal-footer">
+
+                <button
+                    type="button"
+                    class="certificate-close-btn"
+                    data-bs-dismiss="modal">
+
+                    <i class="bi bi-x-lg"></i>
+
+                    Close
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+                         CONTACT
+===================================================== -->
+
+<section id="contact" class="section section-dark">
+
+    <div class="container">
+
+
+        <div class="section-heading">
+
+            <div>
+
+                <span>07</span>
+
+                <h2>
+                    Let's Connect
+                </h2>
+
+            </div>
+
+            <p>
+                Let's discuss opportunities and projects.
+            </p>
+
+        </div>
+
+
+
+        <div class="row g-5">
+
+
+            <!-- ================= CONTACT INFO ================= -->
+
+            <div class="col-lg-5">
+
+                <h3 class="contact-title">
+                    Have a project or opportunity?
+                </h3>
+
+
+                <p class="contact-description">
+
+                    I am open to entry-level Full Stack
+                    Developer, Python Developer and
+                    Software Developer opportunities.
+
+                </p>
+
+
+                <div class="contact-info">
+
+
+                    <!-- EMAIL -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="bi bi-envelope"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Email
+                            </small>
+
+                            <a
+                                href="mailto:prayagrana450@gmail.com">
+
+                                prayagrana450@gmail.com
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- PHONE -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="bi bi-telephone"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Phone
+                            </small>
+
+                            <a
+                                href="tel:+918923718756">
+
+                                +91 89237 18756
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LINKEDIN -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="bi bi-linkedin"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                LinkedIn
+                            </small>
+
+                            <a
+                                href="https://www.linkedin.com/in/prayag-rana-30636b311"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                LinkedIn Profile
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- GITHUB -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="bi bi-github"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                GitHub
+                            </small>
+
+                            <a
+                                href="https://github.com/prayagrana450-boop"
+                                target="_blank"
+                                rel="noopener noreferrer">
+
+                                GitHub Profile
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- LOCATION -->
+
+                    <div class="contact-item">
+
+                        <div class="contact-icon">
+
+                            <i class="bi bi-geo-alt"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                Location
+                            </small>
+
+                            <p>
+                                Saharanpur, Uttar Pradesh, India
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- ================= CONTACT FORM ================= -->
+
+            <div class="col-lg-7">
+
+                <div class="contact-form-wrapper">
+
+
+                    <div class="form-header">
+
+                        <span>
+                            SEND A MESSAGE
+                        </span>
+
+                        <h3>
+                            Let's work together.
+                        </h3>
+
+                    </div>
+
+
+                    <form id="contactForm">
+
+
+                        <div class="row">
+
+
+                            <div class="col-md-6">
+
+                                <label for="name">
+                                    Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="name"
+                                    name="name"
+                                    placeholder="Your Name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="col-md-6">
+
+                                <label for="email">
+                                    Email
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    placeholder="Your Email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Subject">
+
+
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary-custom">
+
+                            Send Message
+
+                            <i class="bi bi-send"></i>
+
+                        </button>
+
+
+                        <div id="formMessage"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+                          FOOTER
+===================================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <div class="footer-logo">
+                    PR
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Prayag
+                    </h3>
+
+                    <p>
+                        Full Stack Developer |
+                        Python Developer
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-social">
+
+
+                <a
+                    href="https://github.com/prayagrana450-boop"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub">
+
+                    <i class="bi bi-github"></i>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/prayag-rana-30636b311"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+
+                    <i class="bi bi-linkedin"></i>
+
+                </a>
+
+
+                <a
+                    href="mailto:prayagrana450@gmail.com"
+                    aria-label="Email">
+
+                    <i class="bi bi-envelope"></i>
+
+                </a>
+
+
+                <a
+                    href="tel:+918923718756"
+                    aria-label="Phone">
+
+                    <i class="bi bi-telephone"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Prayag.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+                       BOOTSTRAP JS
+===================================================== -->
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+<!-- =====================================================
+                         CUSTOM JS
+===================================================== -->
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}">
+</script>
+
+
+</body>
+
+</html>
